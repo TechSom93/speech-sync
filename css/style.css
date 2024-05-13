@@ -118,7 +118,6 @@ body .is-inview .rotate > * {
   display: inline-block;
   padding: 0.3125rem 2rem;
   padding-left: 2.8125rem;
-  -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
   transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
   background-position: center left 0.75rem;
   border: 1px solid #fff;
@@ -278,7 +277,8 @@ header .header-wrapper .header-right ul li:last-child a {
 .sec1 .sec1-wrapper .sec1-shape-section .user-card ul li img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sec1 .sec1-wrapper .sec1-shape-section .user-card ul li:nth-child(2) {
   margin-left: -1rem;
@@ -601,6 +601,8 @@ header .header-wrapper .header-right ul li:last-child a {
   padding-block: 5rem;
   background-color: #fff;
   height: 100vh;
+  display: grid;
+  place-content: center;
 }
 .choose-us-sec .choose-us-sec-wrapper {
   position: relative;
@@ -652,6 +654,4 @@ header .header-wrapper .header-right ul li:last-child a {
 }
 .choose-us-sec .choose-us-sec-wrapper ul li p:last-child {
   font-weight: 600;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
